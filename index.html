@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bandaru Tejaswi, portfolio, Tejaswi, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Tejaswi's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    
+    <!-- Redirect to landing page if accessed directly -->
+    <script>
+        // Check if this page was accessed directly (not from landing page)
+        if (!sessionStorage.getItem('fromLanding')) {
+            window.location.href = 'landing.html';
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.22/build/spline-viewer.js"></script>
+    <style>
+        spline-viewer {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        spline-viewer::part(spline-branding),
+        spline-viewer::part(spline-branding-button) {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+    </style>
+    <title>Portfolio | Tejaswi</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+    <a href="landing.html" class="logo"><i class="fab fa-node-js"></i> Tejaswi</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="landing.html">Landing</a></li>
+      </ul>
+  </nav>
+  
+</header>
+<!-- navbar ends -->
+
+<!-- self section starts -->
+<section class="home" id="home" style="display: flex; align-items: center; justify-content: space-between; min-height: 100vh;">
+    <div id="particles-js"></div>
+    <div class="content" style="flex: 1; padding-right: 2rem;">
+        <h2>Hi There,<br/> I'm Chodavarapu <span>Tejaswi</span></h2>
+        <p>I am into <span class="typing-text"></span></p>
+        <a href="#about" class="btn"><span>About Me</span> <i class="fas fa-arrow-circle-down"></i></a>
+        <div class="socials">
+            <ul class="social-icons">
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/teju-chodavarapu-a59395331?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0Fyns27lRhKoMwSY7628Rg%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                <li><a class="github" aria-label="GitHub" href="https://github.com/tejaswi232006" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="twitter" aria-label="Twitter" href="https://x.com/tejaswi_rushi" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="telegram" aria-label="Telegram" href="https://t.me/lifecode5" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/tejaswi_rushi"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                <li><a class="dev" aria-label="Dev" href="https://dev.to/Tejaswi" target="_blank"><i class="fab fa-dev"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image" style="flex: 1; display: flex; justify-content: center; align-items: center; min-height: 600px;">
+        <spline-viewer url="https://prod.spline.design/L7xfMf7ETJEMwcM7/scene.splinecode" style="width: 600px; height: 600px; transform: translateY(-20%);"></spline-viewer>
+    </div>
+</section>
+<!-- self section ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    <div class="row">
+        <div class="image">
+            <img draggable="false" class="tilt" src="./assets/images/profile 2.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>I'm Tejaswi</h3>
+            <span class="tag">Student of GVPE University | CSE-CS</span>
+            <p>I am a Computer Science Student. I am passionate about improving my coding skills & developing applications & websites. Working for myself to improve my skills.</p>
+            <div class="box-container">
+                <div class="box">
+                    <p><span>email: </span>tejaswi23102006@gmail.com</p>
+                    <p><span>place: </span>Vishakapatnam, India</p>
+                </div>
+            </div>
+            <div class="resumebtn">
+                <a href="https://drive.google.com/file/d/1wkVpVw5MSv4_fiCFDcGCZ1p9qAc7FbqL/view?usp=sharing" target="_blank" class="btn"><span>Resume</span> <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+    <div class="container">
+        <div class="row" id="skillsContainer"></div>
+    </div>
+</section>
+<!-- skills section ends -->
+
+<!-- education section starts -->
+<section class="education" id="education">
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Bachelor of Engineering in Computer Science</h3>
+                <p>GVPE University | Vishakapatnam</p>
+                <h4>2024-2029 | Pursuing</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>MPC Science | Informatic Practices</h3>
+                <p>Sri Chaitanya | CBSE</p>
+                <h4>2022-2024 | Completed</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- education section ends -->
+
+<!-- certificate section starts -->
+<section id="certificates">
+    <div class="certificate-section">
+        <div class="certificate-logo-container">
+            <img src="./assets/images/certificates/42828.jpg" alt="Certificate Logo" class="certificate-logo">
+            <h2>My Certificates</h2>
+        </div>
+        <div class="certificate-grid">
+            <div class="certificate" onclick="openFullscreen(this)">
+                <img src="./assets/images/certificates/certificate1.jpg" alt="Certificate 1" class="certificate-image">
+                <div class="overlay"><button class="view-btn">View Certificate</button></div>
+            </div>
+            <div class="certificate" onclick="openFullscreen(this)">
+                <img src="./assets/images/certificates/hp cyber security awareness_pages-to-jpg-0001.jpg" alt="Certificate 2" class="certificate-image">
+                <div class="overlay"><button class="view-btn">View Certificate</button></div>
+            </div>
+            <div class="certificate" onclick="openFullscreen(this)">
+                <img src="./assets/images/certificates/hp data science certificate_pages-to-jpg-0001.jpg" alt="Certificate 3" class="certificate-image">
+                <div class="overlay"><button class="view-btn">View Certificate</button></div>
+            </div>
+            <div class="certificate" onclick="openFullscreen(this)">
+                <img src="./assets/images/certificates/microsoft fundamentals in AI certificate_page-0001.jpg" alt="Certificate 4" class="certificate-image">
+                <div class="overlay"><button class="view-btn">View Certificate</button></div>
+            </div>
+            <div class="certificate" onclick="openFullscreen(this)">
+                <img src="./assets/images/certificates/microsoft introduction to machine learning certificate_page-0001.jpg" alt="Certificate 5" class="certificate-image">
+                <div class="overlay"><button class="view-btn">View Certificate</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- certificate section ends -->
+
+<!-- Project section starts -->
+
+<!-- Projects Section -->
+<section id="projects" style="background: #f9f9f9; padding: 60px 20px;">
+  <h1 style="text-align: center; margin-bottom: 40px;">My Projects</h1>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: auto;">
+
+      <div style="background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+          <div style="padding: 20px;">
+              <h3>Portfolio Website</h3>
+              <p>Designed and built my personal portfolio using HTML, CSS, and JavaScript. Fully responsive and stylish!</p>
+          </div>
+      </div>
+
+      <div style="background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+          <div style="padding: 20px;">
+              <h3>E-commerce App</h3>
+              <p>Developed a MERN stack e-commerce platform with user authentication, cart system, and admin dashboard.</p>
+          </div>
+      </div>
+
+      <div style="background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+          <div style="padding: 20px;">
+              <h3>Sentiment Analyzer</h3>
+              <p>Built a Python NLP model that analyzes social media posts and predicts user sentiment with 90% accuracy.</p>
+          </div>
+      </div>
+
+      <div style="background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+          <div style="padding: 20px;">
+              <h3>Chatbot Application</h3>
+              <p>Created an AI-powered chatbot for customer support using Dialogflow and integrated it with a web app.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Small CSS to add hover animation -->
+<style>
+  #projects div:hover {
+      transform: translateY(-8px);
+  }
+</style>
+<!-- project section ends -->
+
+<!-- Full-screen Modal -->
+<div id="fullscreenModal" class="fullscreen-modal" onclick="closeFullscreen()">
+    <img id="fullscreenImage" src="" alt="Certificate Fullscreen">
+</div>
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img draggable="false" src="./assets/images/contact1.png" alt="">
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Tejaswi's Portfolio</h3>
+            <p>Thank you for visiting my personal portfolio website. Connect with me over socials.<br><br>Keep Rising 🚀</p>
+        </div>
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="landing.html"><i class="fas fa-chevron-circle-right"></i> Landing</a>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#certificates"><i class="fas fa-chevron-circle-right"></i> certificates</a>
+          <a href="#projects"><i class="fas fa-chevron-circle-right"></i> projects</a>
+          <a href="#contact"><i class="fas fa-chevron-circle-right"></i> contact</a>
+      </div>
+      
+        <div class="box">
+            <h3>Contact Info</h3>
+                          <p><i class="fas fa-phone"></i> +91 8374321453</p>
+            <p><i class="fas fa-envelope"></i> tejaswi23102006@gmail.com</p>
+                          <p><i class="fas fa-map-marked-alt"></i> Vishakapatnam, India</p>
+            <div class="share">
+                <a href="https://www.linkedin.com/in/teju-chodavarapu-a59395331?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0Fyns27lRhKoMwSY7628Rg%3D%3D" class="fab fa-linkedin" target="_blank"></a>
+                <a href="https://github.com/tejaswi232006" class="fab fa-github" target="_blank"></a>
+                <a href="mailto:tejaswi23102006@gmail.com" class="fas fa-envelope" target="_blank"></a>
+                <a href="https://x.com/tejaswi_rushi" class="fab fa-twitter" target="_blank"></a>
+                <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+                <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/teju-chodavarapu-a59395331?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0Fyns27lRhKoMwSY7628Rg%3D%3D">Tejaswi</a></h1>
+</section>
+<!-- footer section ends -->
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
